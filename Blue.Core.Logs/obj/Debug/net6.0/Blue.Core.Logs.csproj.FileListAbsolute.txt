@@ -1,0 +1,12 @@
+C:\Blue\Blue.Core.Logs\bin\Debug\net6.0\Blue.Core.Logs.deps.json
+C:\Blue\Blue.Core.Logs\bin\Debug\net6.0\Blue.Core.Logs.dll
+C:\Blue\Blue.Core.Logs\bin\Debug\net6.0\Blue.Core.Logs.pdb
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.csproj.AssemblyReference.cache
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.AssemblyInfoInputs.cache
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.AssemblyInfo.cs
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.csproj.CoreCompileInputs.cache
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.dll
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\refint\Blue.Core.Logs.dll
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\Blue.Core.Logs.pdb
+C:\Blue\Blue.Core.Logs\obj\Debug\net6.0\ref\Blue.Core.Logs.dll

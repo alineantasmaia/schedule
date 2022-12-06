@@ -1,0 +1,5 @@
+C:\Blue\Blue.Core.Entidades\obj\Debug\net6.0\Blue.Core.Entidades.csproj.AssemblyReference.cache
+C:\Blue\Blue.Core.Entidades\obj\Debug\net6.0\Blue.Core.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Blue\Blue.Core.Entidades\obj\Debug\net6.0\Blue.Core.Entidades.AssemblyInfoInputs.cache
+C:\Blue\Blue.Core.Entidades\obj\Debug\net6.0\Blue.Core.Entidades.AssemblyInfo.cs
+C:\Blue\Blue.Core.Entidades\obj\Debug\net6.0\Blue.Core.Entidades.csproj.CoreCompileInputs.cache

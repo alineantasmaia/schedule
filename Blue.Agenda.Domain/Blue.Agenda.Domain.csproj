@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Configurations>Debug;Release;ReleaseApim</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Auxiliar\" />
+    <Folder Include="Dtos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blue.Core.Entidades\Blue.Core.Entidades.csproj" />
+    <ProjectReference Include="..\Blue.Core.Eventos\Blue.Core.Eventos.csproj" />
+    <ProjectReference Include="..\Blue.Core.Logs\Blue.Core.Logs.csproj" />
+  </ItemGroup>
+
+</Project>

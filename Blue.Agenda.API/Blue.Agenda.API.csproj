@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <Configurations>Debug;Release;ReleaseApim</Configurations>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Elastic.Apm.NetCoreAll" Version="1.17.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="5.0.2" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="6.21.61" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blue.Agenda.Domain\Blue.Agenda.Domain.csproj" />
+    <ProjectReference Include="..\Blue.Agenda.Infra\Blue.Agenda.Infra.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+	  <Content Update="wwwroot\docs-swagger\api-tabela-preco\docs.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
+	<Target Name="OpenAPI" AfterTargets="Build" Condition="$(Configuration)=='ReleaseApim'">
+		<Message Importance="high" Text="Swagger file gerado - $(ASPNETCORE_ENVIRONMENT)" />
+		<Message Importance="high" Text="Path app $(OutputPath)$(AssemblyName)" />
+		<Exec Command="dotnet swagger tofile --output ./wwwroot/docs-swagger/api-tabela-preco/docs.json $(OutputPath)$(AssemblyName).dll v1" WorkingDirectory="$(ProjectDir)" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=$(ASPNETCORE_ENVIRONMENT)" />
+		<Message Importance="high" Text="Swagger file gerado - $(ASPNETCORE_ENVIRONMENT)" />
+	</Target>
+</Project>

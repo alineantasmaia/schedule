@@ -1,0 +1,11 @@
+C:\Blue\Blue.Core.Repositorios\bin\Debug\netstandard2.0\Blue.Core.Repositorios.deps.json
+C:\Blue\Blue.Core.Repositorios\bin\Debug\netstandard2.0\Blue.Core.Repositorios.dll
+C:\Blue\Blue.Core.Repositorios\bin\Debug\netstandard2.0\Blue.Core.Repositorios.pdb
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.csproj.AssemblyReference.cache
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.AssemblyInfoInputs.cache
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.AssemblyInfo.cs
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.csproj.CoreCompileInputs.cache
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.dll
+C:\Blue\Blue.Core.Repositorios\obj\Debug\netstandard2.0\Blue.Core.Repositorios.pdb
+C:\Blue\Blue.Core.Repositorios\bin\Debug\netstandard2.0\Blue.Core.Repositorios.xml

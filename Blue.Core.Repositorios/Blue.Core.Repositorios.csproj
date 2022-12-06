@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--<TargetFramework>net6.0</TargetFramework>-->
+	<DefineConstants Condition=" '$(TargetFramework)' == 'netstandard2.0' ">RUNNING_ON_STANDARD_20</DefineConstants>
+	<TargetFrameworks>netstandard2.0;</TargetFrameworks>
+	  <Configurations>Debug;Release</Configurations>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>  
+  </PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+		<DocumentationFile>bin\Debug\netstandard2.0\Blue.Core.Repositorios.xml</DocumentationFile>
+		<OutputPath></OutputPath>
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>bin\Release\netstandard2.0\Blue.Core.Repositorios.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.22" />
+		<PackageReference Include="Oracle.EntityFrameworkCore" Version="3.19.130" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net461'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.2" />
+		<PackageReference Include="Oracle.EntityFrameworkCore" Version="2.19.60" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="6.21.61" />-->
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Auxiliares\" />
+  </ItemGroup>
+
+</Project>

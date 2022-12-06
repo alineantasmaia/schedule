@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blue.Core.Repositorios</name>
+    </assembly>
+    <members>
+        <member name="M:Blue.Core.Repositorios.Auxiliares.HelperSQL.TryParseOracle(System.String)">
+            <summary>
+            Responsável por tratar as consultas que são passadas para serem executadas na base, com isso, todas as consultas que não passarem explicitamente os parâmetros, este método
+            irá converter para que a consulta utilize bind variable, evitando assim problemas de performance referente a hard parse
+            </summary>
+        </member>
+        <member name="T:Blue.Core.Repositorios.Interfaces.EntidadeBase">
+            <summary>
+            Classe de extensão para mapeamento do Entity
+            </summary>
+        </member>
+        <member name="P:Blue.Core.Repositorios.Interfaces.EntidadeBase.Id">
+            <summary>
+            Propriedade que deve ser sobreescrita no mapeamento das entidades
+            </summary>
+        </member>
+        <member name="P:Blue.Core.Repositorios.Interfaces.EntidadeBase.Notificacoes">
+            <summary>
+            Lista de notificações geradas pelo método Valido
+            </summary>        
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.EntidadeBase.Valido``2(``0,``1)">
+            <summary>
+            Método genérico para validar as entidades
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="validacao"></param>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.Obter``1(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.Obter``1(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando parâmetros dinâmicos (A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.ObterLista``1(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar varias linha) 
+            </summary>
+            <returns>
+            Retorna um IEnumerable do objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.ObterLista``1(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando parâmetros dinâmicos (A consulta deve retornar varias linha) 
+            </summary>
+            <returns>
+            Retorna um IEnumerable do objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.Existe(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (Verifica se a consulta obteve resultado)
+            </summary>
+            <returns>
+            Retorna bool de acordo com o resultado (TRUE - Existe, FALSE - Nao)
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.Existe(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando parâmetros dinâmicos (Verifica se a consulta obteve resultado)
+            </summary>
+            <returns>
+            Retorna bool de acordo com o resultado (TRUE - Existe, FALSE - Nao)
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.Obter(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapper.Obter(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando parâmetros dinâmicos (A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapperSync.ObterSync``1(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapperSync.ObterSync``1(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando Parametros Dinâmicos(A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapperSync.ObterListaSync``1(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar varias linha) 
+            </summary>
+            <returns>
+            Retorna um IEnumerable do objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapperSync.ObterListaSync``1(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando Parametros Dinâmicos (A consulta deve retornar varias linha) 
+            </summary>
+            <returns>
+            Retorna um IEnumerable do objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapperSync.ExisteSync(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (Verifica se a consulta obteve resultado)
+            </summary>
+            <returns>
+            Retorna bool de acordo com o resultado (TRUE - Existe, FALSE - Nao)
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseDapperSync.ExisteSync(System.String,System.Object)">
+            <summary>
+            Executa a consulta enviada como parametro utilizando Parametros Dinâmicos (Verifica se a consulta obteve resultado)
+            </summary>
+            <returns>
+            Retorna bool de acordo com o resultado (TRUE - Existe, FALSE - Nao)
+            </returns>
+        </member>
+        <member name="T:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1">
+            <summary>
+            Uma instância do IRepositorioBaseEntity permite realizar as operações básicas de 'CRUD' (EntityFrameworkCore)
+            tendo como base o contexto (banco/conexão) e a entidade (tabela)
+            informados no momento de sua utilização
+            </summary>
+            <typeparam name="T">Entidade (tabela) a ser utilizada pelo repositório</typeparam>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Adicionar(`0)">
+            <summary>
+            Executa a rotina de INSERT com base na entidade informada
+            </summary>
+            <returns>
+            Retorna a propria entidade já com o Id inserido.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Atualizar(`0)">
+            <summary>
+            Executa a rotina de UPDATE com base na entidade informada
+            </summary>
+            <returns>
+            Retorna a propria entidade já com o atualizada.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Atualizar(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>
+            Atualizar que permite ignorar propriedades no update
+            </summary>
+            <param name="entidade"></param>
+            <param name="ignoraPropriedade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Atualizar(System.String)">
+            <summary>
+            Executa a rotina de UPDATE com base em um T-SQL
+            </summary>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Remover(`0)">
+            <summary>
+            Executa a rotina de DELETE com base na entidade informada
+            </summary>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Remover(System.String)">
+            <summary>
+            Executa a rotina de DELETE com base em um T-SQL
+            </summary>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.ObterLista(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Executa a consulta com base nos filtros informados
+            </summary>
+            <returns>
+            Retorna uma lista da entidade assinada com base no filtro informado
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Obter(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Executa a consulta com base nos filtros informados
+            </summary>
+            <returns>
+            Retorna uma entidade assinada com base no filtro informado
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.ObterPorId(System.Decimal)">
+            <summary>
+            Executa a consulta com base em no id informado buscando da tabela de entidade assinada.
+            </summary>
+            <returns>
+            Retorna o objeto da entidade de acordo com o id informado
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.ObterLista(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro.
+            </summary>
+            <returns>
+            Entidade assinada com a primeira linha da consulta enviada por parametro.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.Obter(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro.
+            </summary>
+            <returns>
+            Entidade assinada com uma lista dos dados da consulta enviada por parametro.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Interfaces.IRepositorioBaseEntity`1.AdicionarEmMassa(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Executa a rotina de INSERT em massa com base nas entidades informada
+            </summary>
+            <returns>
+            Retorna as entidades já com o Id inserido.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.RegistrarRepositorios.AddRepositoriosBase(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Método de extensão que permite utilizar DI (Injeção de Dependência) para criação das instâncias dos repositórios
+            </summary>
+            <param name="services">IServiceCollection auxilia na resolução das dependências</param>
+            <returns></returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.RegistrarRepositorios.AddRepositoriosBase(System.String)">
+            <summary>
+            Método para que as aplicações que não utlizam IServiceCollection possam também registrar as depedências e utiliza-las
+            nas aplicações
+            </summary>
+            <param name="conexao">String de conexão para acesso a base</param>
+        </member>
+        <member name="M:Blue.Core.Repositorios.RegistrarRepositorios.AddRepositoriosBase(Autofac.ContainerBuilder,System.String)">
+            <summary>
+            Método para que as aplicações que já configuram um ContainerBuilder possam adicionar as dependências deste pacote
+            nas aplicações
+            </summary>
+            <param name="builder">Instância do container DI (Autofac)</param>
+            <param name="conexao">String de conexão para acesso a base</param>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseDapper.Existe(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (Verifica se a consulta obteve resultado)
+            </summary>
+            <returns>
+            Retorna bool de acordo com o resultado (TRUE - Existe, FALSE - Nao)
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseDapper.Obter``1(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar apenas UMA linha)
+            </summary>
+            <returns>
+            Retorna o objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseDapper.ObterLista``1(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro (A consulta deve retornar varias linha) 
+            </summary>
+            <returns>
+            Retorna um IEnumerable do objeto passado como parametro com o resultado da consulta.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Adicionar(`0)">
+            <summary>
+            Executa a rotina de INSERT com base na entidade informada
+            beta test , change metodo AddAsync para Add- proposito testar upgrade entity e core net6
+            </summary>
+            <returns>
+            Retorna a propria entidade já com o Id inserido.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Atualizar(`0)">
+            <summary>
+            Executa a rotina de UPDATE com base na entidade informada
+            </summary>
+            <returns>
+            Retorna a propria entidade já atualizada.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Atualizar(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>
+            Executa a rotina de UPDATE com base na entidade informada
+            </summary>
+            <returns>
+            Retorna a propria entidade já atualizada.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Atualizar(System.String)">
+            <summary>
+            Executa a rotina de UPDATE com base em um T-SQL
+            </summary>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Remover(`0)">
+            <summary>
+            Executa a rotina de DELETE com base na entidade informada
+            </summary>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Remover(System.String)">
+            <summary>
+            Executa a rotina de DELETE com base em um T-SQL
+            </summary>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.ObterLista(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Executa a consulta com base nos filtros informados
+            </summary>
+            <returns>
+            Retorna uma lista da entidade assinada com base no filtro informado
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.ObterPorId(System.Decimal)">
+            <summary>
+            Executa a consulta com base em no id informado buscando da tabela de entidade assinada.
+            </summary>
+            <returns>
+            Retorna o objeto da entidade de acordo com o id informado
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.Obter(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro.
+            </summary>
+            <returns>
+            Entidade assinada com a primeira linha da consulta enviada por parametro.
+            </returns>
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.ObterLista(System.String)">
+            <summary>
+            Executa a consulta enviada como parametro.
+            </summary>
+            <returns>
+            Entidade assinada com uma lista dos dados da consulta enviada por parametro.
+            </returns>
+            
+        </member>
+        <member name="M:Blue.Core.Repositorios.Repositorios.RepositorioBaseEntity`1.AdicionarEmMassa(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Executa a rotina de INSERT em massa com base nas entidades informada
+            </summary>
+            <returns>
+            Retorna as entidades já com o Id inserido.
+            </returns>
+        </member>
+    </members>
+</doc>

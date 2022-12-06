@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<Configurations>Debug;Release;ReleaseApim</Configurations>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+    <PackageReference Include="Flunt" Version="1.0.4" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Auxiliares\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Validacoes\Entidades\BLUE\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blue.Core.Repositorios\Blue.Core.Repositorios.csproj" />
+  </ItemGroup>
+
+</Project>

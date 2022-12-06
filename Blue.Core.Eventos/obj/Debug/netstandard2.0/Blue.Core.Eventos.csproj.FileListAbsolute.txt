@@ -1,0 +1,16 @@
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.csproj.AssemblyReference.cache
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.AssemblyInfoInputs.cache
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.AssemblyInfo.cs
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.csproj.CoreCompileInputs.cache
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Eventos.deps.json
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Eventos.dll
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Eventos.pdb
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Entidades.dll
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Repositorios.dll
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Entidades.pdb
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Repositorios.pdb
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.csproj.CopyComplete
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.dll
+C:\Blue\Blue.Core.Eventos\obj\Debug\netstandard2.0\Blue.Core.Eventos.pdb
+C:\Blue\Blue.Core.Eventos\bin\Debug\netstandard2.0\Blue.Core.Repositorios.xml
